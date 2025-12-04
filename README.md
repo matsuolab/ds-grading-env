@@ -1,54 +1,53 @@
 # Data Science Grading Env
 
-grading-env は、課題提出物に対してカスタム採点スクリプトを実行するために設計された実行環境です。
+grading-env is an execution environment designed to run custom scoring scripts for assignment submissions.
 
-本プロジェクトは、元々は非公開の教育プラットフォームにおいて、採点スクリプトを安全に実行するために使用されていたライブラリおよびランタイムユーティリティを提供するものです。
-実装内容の透明性向上と、より広いコミュニティとの共有を目的としてオープンソースとして公開されています。
+This project provides libraries and runtime utilities that were originally used in a private educational platform to execute grading scripts in a controlled environment. It is published as open-source to promote transparency and share implementation details with the broader community.
 
-※本リポジトリには採点スクリプトそのものは含まれていません。
-提供されるのは実行環境および関連ユーティリティのみです。
-
----
-
-## 目的
-
-- カスタム採点ロジックを実行するためのランタイム環境を提供する
-- 実行フレームワークの実装内容を共有する
-- 技術的基盤をオープンソースソフトウェアとして公開する
+Note: This repository does not include the scoring scripts themselves.  
+Only the execution environment and related utilities are provided.
 
 ---
 
-## ライセンス
+## Purpose
 
-本プロジェクトは MIT License の下で公開されています。
-詳細は LICENSE ファイルをご参照ください。
-
----
-
-## コントリビューションについて
-
-本プロジェクトは、積極的な開発や継続的メンテナンスを前提としていません。
-Issue や Pull Request には対応できない場合があります。
+- Provide a runtime environment for executing custom scoring logic  
+- Share implementation details of the execution framework  
+- Make the technical foundation publicly available as open-source software
 
 ---
 
-## 背景
+## License
 
-本リポジトリで公開されている実行環境は、当初は自動採点用の内部ワークフローの一部として使用されていたものです。
-現在は grading-lab コミュニティにより、参考および透明性のためだけに公開されています。
-
-特定の組織、機関、または個人との関係性を示すものではありません。
+This project is released under the MIT License.  
+Refer to the `LICENSE` file for details.
 
 ---
 
-## 免責事項
+## Contributions
 
-本ソフトウェアは「現状のまま」で提供されており、いかなる保証も付与されません。
-作者および著作権者は、本ソフトウェアの利用により生じたいかなる結果についても責任を負いません。
+Active development or ongoing maintenance is not intended.  
+Issues or pull requests may not receive a response.
 
 ---
 
-## ローカルでの利用方法
+## Background
+
+The execution environment published in this repository was originally used as part of an internal workflow for automated grading.  
+It has been made publicly available by the grading-lab community for reference and transparency purposes only.
+
+No affiliation with any specific organization, institution, or individual is implied.
+
+---
+
+## Disclaimer
+
+The software is provided "as is", without warranty of any kind.  
+The authors and copyright holders assume no responsibility for any consequences resulting from its use.
+
+---
+
+## How to use
 
 ```bash
 docker build -t local/score ./
