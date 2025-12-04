@@ -1,4 +1,4 @@
-# Data Science Gradeing Env
+# Data Science Grading Env
 
 grading-env は、課題提出物に対してカスタム採点スクリプトを実行するために設計された実行環境です。
 
