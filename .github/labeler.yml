@@ -1,0 +1,38 @@
+# Labeler configuration for ds-grading-env project
+# Labels are automatically applied based on file paths in pull requests
+
+# Python labels
+python:
+- changed-files:
+  - any-glob-to-any-file:
+    - '**/*.py'
+    - 'requirements.txt'
+
+# Docker labels
+docker:
+- changed-files:
+  - any-glob-to-any-file:
+    - 'Dockerfile'
+    - 'docker-compose.yml'
+    - '.dockerignore'
+
+# Example files
+example:
+- changed-files:
+  - any-glob-to-any-file:
+    - 'example/**/*'
+
+# DevOps
+devops:
+- changed-files:
+  - any-glob-to-any-file:
+    - '.github/**/*'
+    - '.github/workflows/**/*'
+
+# Documentation
+documentation:
+- changed-files:
+  - any-glob-to-any-file:
+    - 'docs/**/*'
+    - '*.md'
+    - '**/*.md'
